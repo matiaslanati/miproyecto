@@ -1,0 +1,151 @@
+@media (min-width: 1200){.barberia{
+    background-image: url("../assets/barberia.jpeg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding: 40%;
+}
+}
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+ul li:hover{
+    text-decoration: underline;
+}
+a{
+    color: white;
+    text-decoration-line: none;
+    font-family: 'Abel', sans-serif;
+}
+header{
+    background-color: black;
+    padding: 35px;
+}
+.logoBarber{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.logoBarber:hover{ 
+    width: 90px;
+    height: 90px;
+}
+.tipoLetra{
+    align-items: center;
+}
+footer{
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+.elementosFooter{
+    display: flex;
+    align-items: center;
+}
+.logoWpp{
+    width: 80px;
+    height: 80px;
+}
+.logoWpp:hover{
+    padding-bottom: 5%;
+}
+
+h1{
+    font-weight: 800;
+    text-shadow: white -2px -1px;
+    color: black;
+}
+.barberia{
+    background-image: url("../assets/barberia.jpeg");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding: 40%;
+}
+
+
+
+.orden{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0 30px 30px;
+}
+.izquierda{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5% 0% 9%;
+}
+h2{
+    font-family: 'Abel', sans-serif;
+    margin-bottom: 5px;
+    margin-right: 600px;
+    margin-left: px;
+}
+p{
+    font-family: 'Abel', sans-serif;
+    font-size:small;
+}
+.derecha{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0 5% 0;
+}
+.imgTurno{
+    width: 85%;
+    height: 85%;
+    margin-top: 35px;
+}
+.servicio{
+    margin: 5% 0 5% 0;
+}
+
+
+h3{
+    font-family: 'Abel', sans-serif;
+    margin-bottom: 3%;
+}
+.pomadas{
+    width: 30%;
+    height: 30%;
+}
+.lentes{
+    width: 30%;
+    height: 30%;
+}
+.vapers{
+    width: 30%;
+    height: 30%;
+}
+
+
+.imgCurso{
+    width: 45%;
+    height: 45%;
+}
+.opcion-1{
+    width: 35%;
+    height: 35%;
+}
+.opcion-2{
+    width: 35%;
+    height: 35%;
+}
+
+
+.ultima-foto{
+    width: 40%;
+    height: 40%;
+}
