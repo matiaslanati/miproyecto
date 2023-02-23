@@ -35,10 +35,13 @@ a{
     height: 90px;
 }
 
+.main{
+    height: 100vh;
+}
+
 footer{
     color: white;
     background-color: black;
-    margin: 0%;
 }
 .row{
     margin: 0px;
@@ -50,6 +53,7 @@ footer{
 .logoWpp:hover{
     padding: 5%;
 }
+
 
 
 h1{
@@ -74,8 +78,9 @@ h1{
 .orden{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 24px 0 24px 24px;
+    height: 100vh;
+    padding: 65px 0 24px 0px;
+    z-index:
 }
 .izquierda{
     width: 50%;
@@ -99,12 +104,12 @@ p{
     margin: 5% 0 5% 0;
 }
 .imgTurno{
-    width: 85%;
-    height: 85%;
+    width: 95%;
+    height: 95%;
     margin-top: 35px;
 }
 .servicio{
-    margin: 5% 0 5% 0;
+    margin: 5% 0 10% 0;
 }
 
 
@@ -115,9 +120,9 @@ h3{
 .grids{
     display: grid;
     width: 100%;
-    height: 100vh;
+    height: 97%;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
 }
 .item1{
     text-align: center;
@@ -129,16 +134,16 @@ h3{
     text-align: center;
 }
 .pomadas{
-    width: 60%;
-    height: 70%;
+    width: 100%;
+    height: 45%;
 }
 .lentes{
-    width: 50%;
-    height: 75%;
+    width: 100%;
+    height: 50%;
 }
 .vapers{
-    width: 60%;
-    height: 65%;
+    width: 100%;
+    height: 40%;
 }
 
 
@@ -177,15 +182,15 @@ a{
     width: 40px;
     height: 40px;
 }
+
 h1{
-    font-weight: 700;
-    text-shadow: white -1px -1px;
     font-size: xx-large;
 }
 
 .orden{
     flex-direction: column;
     margin: 0px;
+    padding: 0px
 }
 .izquierda{
     width: 100%;
@@ -217,15 +222,18 @@ p{
 .imgTurno{
     width: 85%;
     height: 85%;
-    margin: 50px 0px 0px 26px;
+    margin: 50px 0px 0px 20px;
 }
 .servicio{
     margin: 10% 2% 5% 7%;
     text-align: center;
 }
 
-.row{
-    text-align: center;
+
+.alignFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 }
 
@@ -261,12 +269,13 @@ p{
     }
     .imgTurno{
         width: 100%;
-        height: 85%;
+        height: 65%;
         margin-top: 0px;
         margin-left: 0px;
     }
     .tamaño{
         width: 100%;
+        padding-top: 5%;
     }
     .derecha{
         flex-direction: column;
