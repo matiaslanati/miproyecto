@@ -1,0 +1,40 @@
+@media (max-width: 375px){
+    ul{
+        flex-direction: column;
+        a{
+            font-size: 70%;
+        }
+    }
+    
+    h1{
+        font-size: x-large;
+    }
+
+
+.tamañoResponsive{
+    width: 100%;
+    padding-top: 5%;
+}
+p{
+    font-size:small;
+    margin: 1%;
+}
+.derecha{
+    margin: 15% 0 0 0;
+    .servicio{
+        margin: 3% 0 3% 0;
+    }
+}
+
+
+.productos{
+    font-size: x-large;
+    padding: 15px 0 10px 0px;
+}
+.descProductos{
+    font-size: smaller;
+}
+h3{
+    font-size: large;
+}
+}

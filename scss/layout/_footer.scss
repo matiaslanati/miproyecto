@@ -1,0 +1,18 @@
+footer{
+    color: white;
+    background-color: black;
+    h4{
+        font-family: 'Playfair Display', serif;
+    }
+}
+
+.row{
+    margin: 0px;
+    .logoWpp{
+        width: 75px;
+        height: 75px;
+        &:hover{
+            padding: 5%;
+        }
+    }
+}

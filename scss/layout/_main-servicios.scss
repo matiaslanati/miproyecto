@@ -1,0 +1,38 @@
+h2{
+    font-family: 'Abel', sans-serif;
+    margin-bottom: 5px;
+    margin-right: 6px;
+}
+p{
+    font-family: 'Playfair Display', serif;
+}
+.orden{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    padding: 65px 0 24px 0px;
+    .izquierda{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 5px 5% 0% 9%;
+        .cortesia{
+            color:darkgoldenrod;
+            font-style: italic;
+        }
+        .imgTurno{
+            width: 95%;
+            height: 95%;
+            margin-top: 35px;
+        }
+    }
+    .derecha{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin: 5% 0 5% 0;
+        .servicio{
+            margin: 5% 0 10% 0;
+        }
+    }
+}

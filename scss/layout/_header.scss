@@ -1,0 +1,41 @@
+header{
+    background-color: black;
+    padding: 5px;
+    nav{
+        ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 90px 0px 0px;
+        margin: 0px;
+        align-items: center;
+        a{
+            color: white;
+            text-decoration-line: none;
+            font-family: 'Abel', sans-serif;
+            &:hover{text-decoration: underline;}
+        }
+    }
+}
+h4{
+    font-family: ui-sans-serif;
+}
+h5{
+    font-family: ui-sans-serif;}
+}
+.navbar-toggler{
+    background-color: white;
+}
+.navbar{
+    visibility: hidden;
+}
+.logoBarber{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    &:hover{ 
+        width: 90px;
+        height: 90px;
+    }
+}

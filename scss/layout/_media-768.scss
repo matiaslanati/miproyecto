@@ -1,0 +1,152 @@
+@media (max-width: 768px){
+    header{
+        nav{
+            ul{
+            justify-content: space-between;
+            padding-right: 45px ;
+            a{
+                font-size: 70%;
+            }
+            .logoBarber{
+                width: 50px;
+                height: 50px;
+                &:hover{ 
+                    width: 40px;
+                    height: 40px;
+                }
+            }}
+        }
+    }
+
+
+    h1{
+        font-size: xx-large;
+    }
+
+
+    .orden{
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        .izquierda{
+            flex-direction: row;
+            margin: 0px;
+            height: 50vh;
+            .tamañoResponsive{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                padding: 10% 5% 5% 10%;
+                p{
+                    font-size:small;
+                    padding-top: 12%;
+                }
+            }
+            .imgTurno{
+                width: 85%;
+                height: 85%;
+                margin: 50px 0px 0px 20px;
+            }
+        }
+        .derecha{
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            height: 50vh;
+            margin: 0px;
+            .servicio{
+                margin: 10% 2% 5% 7%;
+                text-align: center;
+            }
+        }
+    }
+
+
+.flexCurso{
+    padding: 25px 0 25px 0 ;
+    display: flex;
+    flex-direction: column;
+    .opcion-1{
+        width: 75%;
+        order: 2;
+        padding-bottom: 1%;
+    }
+    .imgCurso{
+        width: 80%;
+        order: 1;
+        padding-bottom: 1%;
+    }
+    .opcion-2{
+        width: 75%;
+        order: 3;
+    }
+}
+
+.main{
+    .parteArriba{
+        flex-direction: column;
+        padding: 20px 0 0 0;
+        .section-1{
+            padding: 0 50px  0 50px;
+        }
+        .section-2{
+            display: flex;
+            justify-content: center;
+            .ultima-foto{
+                width: 75%;
+            }
+        }
+        .section-3{
+            padding: 20px 0 20px 0px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .redes{
+                padding: 15px 0 0px 0px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                .d-flex{
+                    padding: 0% 0 0 0;
+                    a{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        .logoIgTiktok{
+                            &:hover{
+                                width: 25%;
+                            }
+                        }
+                        .logoGmail{
+                            &:hover{
+                                width: 25%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    aside{
+        .parteIzq{
+            padding-bottom: 5px;
+            .logoUbi{
+                width: 10%;
+            }
+            p{
+                margin-bottom: 10px;
+            }
+        }
+        .parteDer{
+            padding-bottom: 0px;
+        }
+    }
+}
+
+    .alignFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

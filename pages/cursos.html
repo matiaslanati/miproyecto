@@ -4,15 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="barberia, corte de cabello, afeitado, peinados, barba, colores de pelo, navajas, barberos, peluqueria, pelos">
+    <meta name="description" content="Ofrecemos cursos prácticos y completos para convertirlos en barberos profesionales">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/favicon_io/favicon.ico">
 </head>
-<body>
+<body class="main">
     <header>
+        <nav class="navbar bg-black fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://www.google.com/maps/place/Lanati's+Barbershop/@-34.4895969,-58.5035354,14z/data=!4m6!3m5!1s0x95bcb1bb258540d9:0xe7b83809a5649a3f!8m2!3d-34.4884473!4d-58.4994584!16s%2Fg%2F11k8jb855z"><img class="logoBarber" src="../assets/logo barberia.png" alt="logo"></a>
+                <h4 class="text-white">LANATI'S BARBERSHOP</h4>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header bg-black">
+                        <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Lanati's Barbershop</h5>
+                        <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bg-black">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../pages/servicios.html"">SERVICIOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../pages/productos.html">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../pages/cursos.html">CURSOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../pages/contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <nav>
             <ul>
-                <a href="https://www.google.com/maps/place/Lanati's+Barbershop/@-34.4895969,-58.5035354,14z/data=!4m6!3m5!1s0x95bcb1bb258540d9:0xe7b83809a5649a3f!8m2!3d-34.4884473!4d-58.4994584!16s%2Fg%2F11k8jb855z"><img class="logoBarber" src="../assets/logo barberia.png" alt=""></a>
+                <a href="https://www.google.com/maps/place/Lanati's+Barbershop/@-34.4895969,-58.5035354,14z/data=!4m6!3m5!1s0x95bcb1bb258540d9:0xe7b83809a5649a3f!8m2!3d-34.4884473!4d-58.4994584!16s%2Fg%2F11k8jb855z"><img class="logoBarber" src="../assets/logo barberia.png" alt="logo"></a>
                 <a href="../index.html">INICIO</a>
                 <a href="../pages/servicios.html">SERVICIOS</a>
                 <a href="../pages/productos.html">PRODUCTOS</a>
@@ -21,19 +58,26 @@
             </ul>
         </nav>
     </header>
-    <main class="main">
-        <article>
-            <h2>CURSOS</h2>
+    <main>
+        <article class="container">
+            <h2 class="cursoTitulo">CURSOS</h2>
+            <p class="descripcion">Ofrecemos cursos prácticos y completos diseñados para ayudar a los estudiantes a adquirir las habilidades necesarias para convertirse en barberos profesionales. Desde técnicas de corte de cabello y afeitado hasta atención al cliente, nuestros instructores capacitados están aquí para guiar a nuestros estudiantes a través de todo el proceso de aprendizaje.</p>
         </article>
-        <section>
-            <img class="opcion-1" src="../assets/cursos 1.jpeg" alt="">
-            <img class="imgCurso" src="../assets/cursos.png" alt="">
-            <img class="opcion-2" src="../assets/cursos 2.jpeg" alt="">
-        </section>
+        <div class="flexCurso">
+            <div class="opcion-1">
+                <img class="img1" src="../assets/cursos 1.jpeg" alt="">
+            </div>
+            <div class="imgCurso">
+                <img class="img2" src="../assets/cursos.png" alt="">
+            </div>
+            <div class="opcion-2">                
+                <img class="img3" src="../assets/cursos 2.jpeg" alt="">
+            </div>
+        </div>
     </main>
     <footer class="row container-fluid">
-        <section  class="col-sm-12 col-md-5 col-lg-5 pt-3 alignFooter">
-            <h2>LANATI'S BARBERSHOP</h2>
+        <section  class="col-sm-12 col-md-5 col-lg-5 pt-4 alignFooter">
+            <h4 class="text-white">LANATI'S BARBERSHOP</h4>
         </section>
         <section class="col-sm-12 col-md-6 col-lg-5,5 pt-2 alignFooter">
             <p>© 2023 Todos los derechos reservados.</p>
@@ -41,7 +85,7 @@
         </section>
         <div class="col-sm-12 col-md-1 col-lg-1,5 p-0 alignFooter">
             <a href="https://wa.me/1135161755">
-                <img class= "logoWpp" src="../assets/whatsapp.png" alt="">
+                <img class= "logoWpp" src="../assets/whatsapp.png" alt="logo">
             </a>
         </div>
     </footer>

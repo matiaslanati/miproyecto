@@ -1,0 +1,32 @@
+@media (max-width: 320px){
+    ul{
+        flex-direction: column;
+        a{
+            font-size: 70%;
+        }
+    }
+    
+    h1{
+        font-size: large;
+    }
+
+.orden{
+    .derecha{
+        margin: 0;
+        .servicio{
+            margin: 5% 0 5% 0;
+        }
+    }
+}
+
+.productos{
+    font-size: 25px;
+}
+
+
+    .parteArriba{
+        h2{
+            font-size: large;
+        }
+    }
+}

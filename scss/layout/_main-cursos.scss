@@ -1,0 +1,38 @@
+.main{
+    height: 100vh;
+}
+.cursoTitulo{
+display: flex;
+justify-content: center;
+padding: 45px 0 25px 0;}
+.descripcion{
+    text-align: center;
+}
+.flexCurso{
+    display: flex;
+    align-items: center;
+    padding: 50px 0 50px 0 ;
+    justify-content: space-around;
+    .opcion-1{
+        width: 30%;
+        align-items: center;
+        .img1{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .imgCurso{
+        width: 39%;
+        .img2{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .opcion-2{
+        width: 30%;
+        .img3{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

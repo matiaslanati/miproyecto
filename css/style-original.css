@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Roboto:wght@100&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;}
+    
+header{
+        background-color: black;
+        padding: 5px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 90px 0px 0px;
+    margin: 0px;
+    align-items: center;
+}
+ul li:hover{
+    text-decoration: underline;
+}
+a{
+    color: white;
+    text-decoration-line: none;
+    font-family: 'Abel', sans-serif;
+}
+.logoBarber{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.logoBarber:hover{ 
+    width: 90px;
+    height: 90px;
+}
+
+.main{
+    height: 100vh;
+}
+
+footer{
+    color: white;
+    background-color: black;
+}
+.row{
+    margin: 0px;
+}
+.logoWpp{
+    width: 75px;
+    height: 75px;
+}
+.logoWpp:hover{
+    padding: 5%;
+}
+
+
+
+h1{
+    font-weight: 700;
+    text-shadow: white -1px -1px;
+    color: black;
+    font-size: xxx-large;
+}
+.barberia{
+    background: url("../assets/barberia.jpeg") no-repeat center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.orden{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    padding: 65px 0 24px 0px;
+}
+.izquierda{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5% 0% 9%;
+}
+h2{
+    font-family: 'Abel', sans-serif;
+    margin-bottom: 5px;
+    margin-right: 6px;
+}
+p{
+    font-family: 'Abel', sans-serif;
+    font-size:small;
+}
+.derecha{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0 5% 0;
+}
+.imgTurno{
+    width: 95%;
+    height: 95%;
+    margin-top: 35px;
+}
+.servicio{
+    margin: 5% 0 10% 0;
+}
+
+
+h3{
+    font-family: 'Abel', sans-serif;
+    margin-bottom: 3%;
+}
+.grids{
+    display: grid;
+    width: 100%;
+    height: 97%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+.item1{
+    text-align: center;
+}
+.item2{
+    text-align: center;
+}
+.item3{
+    text-align: center;
+}
+.pomadas{
+    width: 100%;
+    height: 45%;
+}
+.lentes{
+    width: 100%;
+    height: 50%;
+}
+.vapers{
+    width: 100%;
+    height: 40%;
+}
+
+
+.imgCurso{
+    width: 45%;
+    height: 45%;
+}
+.opcion-1{
+    width: 35%;
+    height: 35%;
+}
+.opcion-2{
+    width: 35%;
+    height: 35%;
+}
+
+
+.ultima-foto{
+    width: 40%;
+    height: 40%;
+}
+
+@media (max-width: 768px){
+ul{
+    justify-content: space-between;
+    padding: 0px 35px 0px 0px;
+}
+a{
+    font-size: 70%;
+}
+.logoBarber{
+    width: 50px;
+    height: 50px;
+}
+.logoBarber:hover{ 
+    width: 40px;
+    height: 40px;
+}
+
+h1{
+    font-size: xx-large;
+}
+
+.orden{
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px
+}
+.izquierda{
+    width: 100%;
+    flex-direction: row;
+    margin: 0px;
+    height: 50vh;
+}
+.tamañoResponsive{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10% 5% 5% 10%;
+
+}
+.pResponsive{
+    padding-top: 15%;
+}
+p{
+    font-family: 'Abel', sans-serif;
+    font-size:small;
+}
+.derecha{
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    height: 50vh;
+    margin: 0px;
+}
+.imgTurno{
+    width: 85%;
+    height: 85%;
+    margin: 50px 0px 0px 20px;
+}
+.servicio{
+    margin: 10% 2% 5% 7%;
+    text-align: center;
+}
+
+
+.alignFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
+
+@media (max-width: 320px){
+    ul{
+        flex-direction: column;
+    }
+    a{
+        font-size: 70%;
+    }
+    h1{
+        font-weight: 700;
+        text-shadow: white -1px -1px;
+        font-size: xx-large;
+    }
+
+
+    .orden{
+        flex-direction: column;
+        margin: 0px;
+    }
+    .izquierda{
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+    .pResponsive{
+        padding-top: 1%;
+    }
+    p{
+        font-size:small;
+        margin: 1%;
+    }
+    .imgTurno{
+        width: 100%;
+        height: 65%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .tamañoResponsive{
+        width: 100%;
+        padding-top: 5%;
+    }
+    .derecha{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+    }
+
+    .servicio{
+        margin: 5% 0 5% 0;
+    }
+}

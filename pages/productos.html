@@ -4,15 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="barberia, corte de cabello, afeitado, peinados, barba, colores de pelo, navajas, barberos, peluqueria, pelos">
+    <meta name="description" content="vendemos los mejores productos para hacerte lucir y sentir mejor">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../assets/favicon_io/favicon.ico">
 </head>
-<body>
+<body class="main">
     <header>
+        <nav class="navbar bg-black fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://www.google.com/maps/place/Lanati's+Barbershop/@-34.4895969,-58.5035354,14z/data=!4m6!3m5!1s0x95bcb1bb258540d9:0xe7b83809a5649a3f!8m2!3d-34.4884473!4d-58.4994584!16s%2Fg%2F11k8jb855z"><img class="logoBarber" src="../assets/logo barberia.png" alt="logo"></a>
+                <h4 class="text-white">LANATI'S BARBERSHOP</h4>
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header bg-black">
+                        <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Lanati's Barbershop</h5>
+                        <button type="button" class="btn-close bg-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body bg-black">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active text-white" aria-current="page" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../pages/servicios.html"">SERVICIOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../pages/productos.html">PRODUCTOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../pages/cursos.html">CURSOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="../pages/contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <nav>
             <ul>
-                <a href="https://www.google.com/maps/place/Lanati's+Barbershop/@-34.4895969,-58.5035354,14z/data=!4m6!3m5!1s0x95bcb1bb258540d9:0xe7b83809a5649a3f!8m2!3d-34.4884473!4d-58.4994584!16s%2Fg%2F11k8jb855z"><img class="logoBarber" src="../assets/logo barberia.png" alt=""></a>
+                <a href="https://www.google.com/maps/place/Lanati's+Barbershop/@-34.4895969,-58.5035354,14z/data=!4m6!3m5!1s0x95bcb1bb258540d9:0xe7b83809a5649a3f!8m2!3d-34.4884473!4d-58.4994584!16s%2Fg%2F11k8jb855z"><img class="logoBarber" src="../assets/logo barberia.png" alt="logo"></a>
                 <a href="../index.html">INICIO</a>
                 <a href="../pages/servicios.html">SERVICIOS</a>
                 <a href="../pages/productos.html">PRODUCTOS</a>
@@ -21,10 +58,10 @@
             </ul>
         </nav>
     </header>
-    <main class="main">
+    <main >
         <div>
-            <h2>PRODUCTOS</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla natus expedita repellat impedit placeat labore excepturi quaerat quod provident sed sequi, saepe corrupti, quidem dolores consequatur optio cupiditate beatae assumenda.</p>
+            <h2 class="productos container">PRODUCTOS</h2>
+            <p class="descProductos container">Descubre nuestra selección de productos premium en nuestra barbería! Tenemos todo lo que necesitas para lucir y sentirte mejor, desde anteojos de sol de alta calidad hasta las mejores pomadas y vaporizadores. Nuestros expertos te ayudarán a encontrar los productos adecuados para tus necesidades y estilo personal.</p>
         </div>
         <div class="grids">
             <section class="item1">
@@ -36,14 +73,14 @@
                 <img class="lentes" src="../assets/lentes.jpeg" alt="">
             </section>
             <section class="item3">
-                <h3>VAPERS</h3>
+                <h3>VAPORIZADORES</h3>
                 <img class="vapers" src="../assets/vapers.jpeg" alt="">
             </section>
         </div>
     </main>
     <footer class="row container-fluid">
-        <section  class="col-sm-12 col-md-5 col-lg-5 pt-3 alignFooter">
-            <h2>LANATI'S BARBERSHOP</h2>
+        <section  class="col-sm-12 col-md-5 col-lg-5 pt-4 alignFooter">
+            <h4 class="text-white">LANATI'S BARBERSHOP</h4>
         </section>
         <section class="col-sm-12 col-md-6 col-lg-5,5 pt-2 alignFooter">
             <p>© 2023 Todos los derechos reservados.</p>
@@ -51,7 +88,7 @@
         </section>
         <div class="col-sm-12 col-md-1 col-lg-1,5 p-0 alignFooter">
             <a href="https://wa.me/1135161755">
-                <img class= "logoWpp" src="../assets/whatsapp.png" alt="">
+                <img class= "logoWpp" src="../assets/whatsapp.png" alt="logo">
             </a>
         </div>
     </footer>
