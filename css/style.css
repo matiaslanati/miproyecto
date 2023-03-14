@@ -103,17 +103,18 @@ h1 {
           align-items: center;
 }
 
-h2 {
+.main {
+  height: 100vh;
+}
+.main h2 {
   font-family: "Abel", sans-serif;
   margin-bottom: 5px;
   margin-right: 6px;
 }
-
-p {
+.main p {
   font-family: "Playfair Display", serif;
 }
-
-.orden {
+.main .orden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -121,10 +122,9 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 100vh;
   padding: 65px 0 24px 0px;
 }
-.orden .izquierda {
+.main .orden .izquierda {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,16 +135,16 @@ p {
           flex-direction: column;
   margin: 5px 5% 0% 9%;
 }
-.orden .izquierda .cortesia {
+.main .orden .izquierda .cortesia {
   color: darkgoldenrod;
   font-style: italic;
 }
-.orden .izquierda .imgTurno {
+.main .orden .izquierda .imgTurno {
   width: 95%;
   height: 95%;
   margin-top: 35px;
 }
-.orden .derecha {
+.main .orden .derecha {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -155,7 +155,7 @@ p {
           flex-direction: column;
   margin: 5% 0 5% 0;
 }
-.orden .derecha .servicio {
+.main .orden .derecha .servicio {
   margin: 5% 0 10% 0;
 }
 
@@ -367,20 +367,20 @@ h3 {
     width: 40px;
     height: 40px;
   }
-  .orden {
+  .main .orden {
     margin: 0px;
   }
-  .orden .izquierda {
+  .main .orden .izquierda {
     width: 100%;
   }
-  .orden .izquierda .pResponsive {
+  .main .orden .izquierda .pResponsive {
     padding-top: 15%;
   }
-  .orden .derecha {
+  .main .orden .derecha {
     width: 100%;
     margin: 8% 0 5% 0;
   }
-  .orden .derecha .servicio {
+  .main .orden .derecha .servicio {
     text-align: center;
   }
   .ultima-foto {
@@ -421,7 +421,7 @@ h3 {
   h1 {
     font-size: xx-large;
   }
-  .orden {
+  .main .orden {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -429,15 +429,16 @@ h3 {
     margin: 0px;
     padding: 0px;
   }
-  .orden .izquierda {
+  .main .orden .izquierda {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
     margin: 0px;
+    width: 100%;
     height: 50vh;
   }
-  .orden .izquierda .tamañoResponsive {
+  .main .orden .izquierda .tamañoResponsive {
     width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -448,16 +449,16 @@ h3 {
             flex-direction: column;
     padding: 10% 5% 5% 10%;
   }
-  .orden .izquierda .tamañoResponsive p {
+  .main .orden .izquierda .tamañoResponsive p {
     font-size: small;
     padding-top: 12%;
   }
-  .orden .izquierda .imgTurno {
+  .main .orden .izquierda .imgTurno {
     width: 85%;
     height: 85%;
     margin: 50px 0px 0px 20px;
   }
-  .orden .derecha {
+  .main .orden .derecha {
     width: 100%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -469,7 +470,7 @@ h3 {
     height: 50vh;
     margin: 0px;
   }
-  .orden .derecha .servicio {
+  .main .orden .derecha .servicio {
     margin: 10% 2% 5% 7%;
     text-align: center;
   }
@@ -611,30 +612,30 @@ h3 {
   h1 {
     font-weight: 600;
   }
-  .orden .izquierda {
+  .main .orden .izquierda {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
   }
-  .orden .izquierda .tamañoResponsive {
+  .main .orden .izquierda .tamañoResponsive {
     width: 100%;
     padding-top: 5%;
   }
-  .orden .izquierda .tamañoResponsive p {
+  .main .orden .izquierda .tamañoResponsive p {
     padding-top: 0%;
   }
-  .orden .izquierda .imgTurno {
+  .main .orden .izquierda .imgTurno {
     width: 90%;
     height: 70%;
     margin: 0px 5% 0px 5%;
   }
-  .orden p {
+  .main .orden p {
     font-size: small;
     margin: 1%;
   }
-  .orden .derecha {
+  .main .orden .derecha {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -642,7 +643,7 @@ h3 {
     width: 100%;
     margin: 10% 0 0 0;
   }
-  .orden .derecha .servicio {
+  .main .orden .derecha .servicio {
     margin: 3% 0 3% 0;
   }
   .productos {
@@ -764,18 +765,14 @@ h3 {
   h1 {
     font-size: x-large;
   }
-  .tamañoResponsive {
-    width: 100%;
-    padding-top: 5%;
-  }
-  p {
+  .main p {
     font-size: small;
     margin: 1%;
   }
-  .derecha {
+  .main .derecha {
     margin: 15% 0 0 0;
   }
-  .derecha .servicio {
+  .main .derecha .servicio {
     margin: 3% 0 3% 0;
   }
   .productos {
@@ -802,10 +799,10 @@ h3 {
   h1 {
     font-size: large;
   }
-  .orden .derecha {
+  .main .orden .derecha {
     margin: 0;
   }
-  .orden .derecha .servicio {
+  .main .orden .derecha .servicio {
     margin: 5% 0 5% 0;
   }
   .productos {

@@ -10,11 +10,13 @@
         font-size: large;
     }
 
-.orden{
-    .derecha{
-        margin: 0;
-        .servicio{
-            margin: 5% 0 5% 0;
+.main{
+    .orden{
+        .derecha{
+            margin: 0;
+            .servicio{
+                margin: 5% 0 5% 0;
+            }
         }
     }
 }
@@ -24,9 +26,9 @@
 }
 
 
-    .parteArriba{
-        h2{
-            font-size: large;
-        }
+.parteArriba{
+    h2{
+        font-size: large;
     }
+}
 }

@@ -21,33 +21,35 @@
         font-weight: 600;
     }
 
-.orden{
-    .izquierda{
-        flex-direction: column;
-        width: 100%;
-        .tamañoResponsive{
+.main{
+    .orden{
+        .izquierda{
+            flex-direction: column;
             width: 100%;
-            padding-top: 5%;
-            p{
-                padding-top: 0%;
+            .tamañoResponsive{
+                width: 100%;
+                padding-top: 5%;
+                p{
+                    padding-top: 0%;
+                }
+            }
+            .imgTurno{
+                width: 90%;
+                height: 70%;
+                margin: 0px 5% 0px 5%;
             }
         }
-        .imgTurno{
-            width: 90%;
-            height: 70%;
-            margin: 0px 5% 0px 5%;
+        p{
+            font-size:small;
+            margin: 1%;
         }
-    }
-    p{
-        font-size:small;
-        margin: 1%;
-    }
-    .derecha{
-        flex-direction: column;
-        width: 100%;
-        margin: 10% 0 0 0;
-        .servicio{
-            margin: 3% 0 3% 0;
+        .derecha{
+            flex-direction: column;
+            width: 100%;
+            margin: 10% 0 0 0;
+            .servicio{
+                margin: 3% 0 3% 0;
+            }
         }
     }
 }
