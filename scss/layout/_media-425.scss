@@ -2,11 +2,11 @@
     header{
         nav{
             padding-bottom: 6%;
-            .primerNav{
-                visibility: hidden;
-                a{
-                    font-size: 70%;
-                }
+        }
+        .navPrincipal{
+            visibility: hidden;
+            a{
+                font-size: 70%;
             }
         }
         .navbar{
@@ -23,6 +23,7 @@
 
 .main{
     .orden{
+        padding-top: 85px;
         .izquierda{
             flex-direction: column;
             width: 100%;
@@ -46,7 +47,7 @@
         .derecha{
             flex-direction: column;
             width: 100%;
-            margin: 10% 0 0 0;
+            margin: 0;
             .servicio{
                 margin: 3% 0 3% 0;
             }
@@ -54,64 +55,65 @@
     }
 }
 
-.productos{
-    text-align: center;
-    padding: 15px 0 20px 0px;
-}
-.descProductos{
-    padding: 0px 10px 0px 10px;
-}
-h3{
-    margin-bottom: 3%;
-}
-.grids{
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3);
-    .item1{
-        height: 228px;
-        .pomadas{
-            width: 65%;
-            height: 180px;
-        }
+.paddingMain{
+    .descProductos{
+        padding: 0px 10px 15px 10px;
     }
-    .item2{
-        height: 225px;
-        .lentes{
-            width: 55%;
-            height: 77%;
-        }
+    h3{
+        margin-bottom: 3%;
     }
-    .item3{
-        height: 225px;
-        .vapers{
-            width: 70%;
-            height: 75%;
+    .grids{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3);
+        .item1{
+            height: 228px;
+            .pomadas{
+                width: 65%;
+                height: 180px;
+            }
+        }
+        .item2{
+            height: 225px;
+            .lentes{
+                width: 55%;
+                height: 77%;
+            }
+        }
+        .item3{
+            height: 225px;
+            .vapers{
+                width: 70%;
+                height: 75%;
+            }
         }
     }
 }
 
 .main{
+    .paddingMain{
+        padding-top: 90px;
+    }
     .parteArriba{
         padding: 20px 0 0px 0;
-        .primerP{
-            padding: 1rem 0 0 0;
-        }
         .section-3{
             padding: 20px 0 20px 0px;
             .redes{
                 display: flex;
                 flex-direction: column;
                 padding-top: 0;
-                .logoIgTiktok{
-                    width: 18%;
-                }
-                .logoGmail{
-                    width: 18%;
+                a{
+                    font-size: 65%;
+                    .logoIgTiktok{
+                        width: 50px;
+                    }
+                    .logoGmail{
+                        width: 50px;
+                    }
                 }
             }
         }
     }
-    aside{
+    .parteInfer{
         display: flex;
         flex-direction: column-reverse;
         .parteIzq{

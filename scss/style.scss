@@ -1,4 +1,6 @@
 @import "./base/reset";
+@import "./utilities/mixin.scss";
+@import "./utilities/variables.scss";
 @import "./layout/header";
 @import "./layout/footer";
 @import "./layout/main-index";

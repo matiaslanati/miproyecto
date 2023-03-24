@@ -1,7 +1,12 @@
 header{
-    background-color: black;
-    padding: 5px;
-    nav{
+    .navPrincipal{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        background-color: black;
+        padding: 10px;
         ul{
         list-style: none;
         display: flex;
@@ -17,25 +22,24 @@ header{
             &:hover{text-decoration: underline;}
         }
     }
-}
-h4{
-    font-family: ui-sans-serif;
-}
-h5{
-    font-family: ui-sans-serif;}
-}
-.navbar-toggler{
-    background-color: white;
-}
-.navbar{
-    visibility: hidden;
-}
-.logoBarber{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    &:hover{ 
-        width: 90px;
-        height: 90px;
+    h4{
+        font-family: ui-sans-serif;
+    }
+    h5{
+        font-family: ui-sans-serif;}
+    }
+    .navbar{
+        visibility: hidden;
+        .navbar-toggler{
+            background-color: white;
+        }
+    }
+    .logoBarber{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        &:hover{ 
+            @include logo-animacion;
+        }
     }
 }

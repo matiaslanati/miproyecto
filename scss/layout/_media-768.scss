@@ -10,10 +10,6 @@
             .logoBarber{
                 width: 50px;
                 height: 50px;
-                &:hover{ 
-                    width: 40px;
-                    height: 40px;
-                }
             }}
         }
     }
@@ -26,13 +22,11 @@
 .main{
     .orden{
         flex-direction: column;
-        margin: 0px;
-        padding: 0px;
+        padding: 50px 0 0 0;
         .izquierda{
             flex-direction: row;
             margin: 0px;
             width: 100%;
-            height: 50vh;
             .tamañoResponsive{
                 width: 50%;
                 display: flex;
@@ -44,9 +38,8 @@
                 }
             }
             .imgTurno{
-                width: 85%;
-                height: 85%;
-                margin: 50px 0px 0px 20px;
+                height: 80%;
+                margin: 50px 0px 0px 0px;
             }
         }
         .derecha{
@@ -85,62 +78,52 @@
 }
 
 .main{
-    .parteArriba{
-        flex-direction: column;
-        padding: 20px 0 0 0;
-        .section-1{
-            padding: 0 50px  0 50px;
-        }
-        .section-2{
-            display: flex;
-            justify-content: center;
-            .ultima-foto{
-                width: 75%;
-            }
-        }
-        .section-3{
-            padding: 20px 0 20px 0px;
-            display: flex;
-            align-items: center;
+    .paddingMain{
+        padding-top: 70px;
+        .parteArriba{
             flex-direction: column;
-            .redes{
-                padding: 15px 0 0px 0px;
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                .d-flex{
-                    padding: 0% 0 0 0;
+            padding: 20px 0 0 0;
+            .section-1{
+                padding: 0 50px  0 50px;
+                border-radius: 0%;
+            }
+                .ultima-foto{
+                    width: 80%;
+                    border-radius: 0%;
+                }
+            .section-3{
+                padding: 20px 0 20px 0px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                border-radius: 0%;
+                .redes{
+                    padding: 15px 0 0px 0px;
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
                     a{
                         display: flex;
                         flex-direction: column;
                         align-items: center;
                         text-align: center;
-                        .logoIgTiktok{
-                            &:hover{
-                                width: 25%;
-                            }
-                        }
-                        .logoGmail{
-                            &:hover{
-                                width: 25%;
-                            }
-                        }
                     }
                 }
             }
         }
-    }
-    aside{
-        .parteIzq{
-            padding-bottom: 5px;
-            .logoUbi{
-                width: 10%;
+        .parteInfer{
+            .parteIzq{
+                padding-bottom: 5px;
+                .logoUbi{
+                    width: 10%;
+                    padding: 5px;
+                }
+                p{
+                    margin-bottom: 10px;
+                }
             }
-            p{
-                margin-bottom: 10px;
+            .parteDer{
+                padding-bottom: 0px;
             }
-        }
-        .parteDer{
-            padding-bottom: 0px;
         }
     }
 }

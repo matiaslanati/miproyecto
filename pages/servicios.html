@@ -9,13 +9,14 @@
     <title>Servicios</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="shortcut icon" href="../assets/favicon_io/favicon.ico">
+    <link rel="shortcut icon" href="../assets/barberia.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 </head>
 <body class="main">
     <header>
         <nav class="navbar bg-black fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="https://www.google.com/maps/place/Lanati's+Barbershop/@-34.4895969,-58.5035354,14z/data=!4m6!3m5!1s0x95bcb1bb258540d9:0xe7b83809a5649a3f!8m2!3d-34.4884473!4d-58.4994584!16s%2Fg%2F11k8jb855z"><img class="logoBarber" src="../assets/logo barberia.png" alt="logo"></a>
+                <a class="navbar-brand" href="https://www.google.com/maps/place/Lanati's+Barbershop/@-34.4895969,-58.5035354,14z/data=!4m6!3m5!1s0x95bcb1bb258540d9:0xe7b83809a5649a3f!8m2!3d-34.4884473!4d-58.4994584!16s%2Fg%2F11k8jb855z"><img class="logoBarber" src="../assets/logo barberia.png" alt="logo de la barberia"></a>
                 <h4 class="text-white">LANATI'S BARBERSHOP</h4>
                 <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -31,7 +32,7 @@
                                 <a class="nav-link active text-white" aria-current="page" href="../index.html">INICIO</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="../pages/servicios.html"">SERVICIOS</a>
+                                <a class="nav-link text-white" href="../pages/servicios.html">SERVICIOS</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="../pages/productos.html">PRODUCTOS</a>
@@ -47,9 +48,9 @@
                 </div>
             </div>
         </nav>
-        <nav>
+        <nav class="navPrincipal">
             <ul>
-                <a href="https://www.google.com/maps/place/Lanati's+Barbershop/@-34.4895969,-58.5035354,14z/data=!4m6!3m5!1s0x95bcb1bb258540d9:0xe7b83809a5649a3f!8m2!3d-34.4884473!4d-58.4994584!16s%2Fg%2F11k8jb855z"><img class="logoBarber" src="../assets/logo barberia.png" alt="logo"></a>
+                <a href="https://www.google.com/maps/place/Lanati's+Barbershop/@-34.4895969,-58.5035354,14z/data=!4m6!3m5!1s0x95bcb1bb258540d9:0xe7b83809a5649a3f!8m2!3d-34.4884473!4d-58.4994584!16s%2Fg%2F11k8jb855z"><img class="logoBarber" src="../assets/logo barberia.png" alt="logo de la barberia"></a>
                 <a href="../index.html">INICIO</a>
                 <a href="../pages/servicios.html">SERVICIOS</a>
                 <a href="../pages/productos.html">PRODUCTOS</a>
@@ -58,51 +59,49 @@
             </ul>
         </nav>
     </header>
-    <main class="main">
-        <div class="orden">
-            <div class="izquierda">
-                <section class="tamañoResponsive">
-                    <div>
-                        <h2>SERVICIOS</h2>
-                    </div>
-                    <p class="pResonsive">
-                        En nuestra barbería, nos enorgullece ofrecer servicios personalizados para cada cliente. Desde cortes de cabello clásicos hasta estilos modernos y atrevidos.
-                    </p>
-                    <p class="cortesia">
-                        Todos nuestros servicios incluyen una bebida de cortesía (Café, Agua, Jugo, Pepsi)
-                    </p>
-                </section>
-                <section>
-                    <img class="imgTurno" src="../assets/turnos.jpeg" alt="imagen-turno" />
-                </section>
+    <main class="orden">
+        <section class="izquierda">
+            <div class="tamañoResponsive">
+                <div>
+                    <h2>SERVICIOS</h2>
+                </div>
+                <p class="pResonsive">
+                    En nuestra barbería, nos enorgullece ofrecer servicios personalizados para cada cliente. Desde cortes de cabello clásicos hasta estilos modernos y atrevidos.
+                </p>
+                <p class="cortesia">
+                    Todos nuestros servicios incluyen una bebida de cortesía (Café, Agua, Jugo, Pepsi)
+                </p>
             </div>
-            <div class="derecha">
-                <section class="servicio">
-                    <h3>CORTE DE CABELLO</h3>
-                    <p class="pResponsive">Corte de cabello con lavado incluído y terminaciones a navaja.</p>
-                </section>
-                <section class="servicio">
-                    <h3>ARREGLO DE BARBA</h3>
-                    <p class="pResponsive">Arreglo de barba con fomento caliente y frío. Terminaciones a navaja y productos para el cuidado de tu piel y barba.</p>
-                </section>
-                <section class="servicio">
-                    <h3>TINTURA</h3>
-                    <p class="pResonsive">Color completo, mechas y diseños con tintutra.</p>
-                </section>
+            <aside>
+                <img class="imgTurno" src="../assets/turnos.jpeg" alt="imagen de turnos" />
+            </aside>
+        </section>
+        <section class="derecha">
+            <div class="servicio">
+                <h3>CORTE DE CABELLO</h3>
+                <p class="pResponsive">Corte de cabello con lavado incluído y terminaciones a navaja.</p>
             </div>
-        </div>
+            <div class="servicio">
+                <h3>ARREGLO DE BARBA</h3>
+                <p class="pResponsive">Arreglo de barba con fomento caliente y frío. Terminaciones a navaja y productos para el cuidado de tu piel y barba.</p>
+            </div>
+            <div class="servicio">
+                <h3>TINTURA</h3>
+                <p class="pResonsive">Color completo, mechas y diseños con tintutra.</p>
+            </div>
+        </section>
     </main>
     <footer class="row container-fluid">
-        <section  class="col-sm-12 col-md-5 col-lg-5 pt-4 alignFooter">
+        <div  class="col-sm-12 col-md-5 col-lg-5 col-xxl-5,5 d-flex flex-column justify-content-center alignFooter">
             <h4 class="text-white">LANATI'S BARBERSHOP</h4>
-        </section>
-        <section class="col-sm-12 col-md-6 col-lg-5,5 pt-2 alignFooter">
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-5,5 col-xxl-5,5 pt-2 d-flex flex-column justify-content-center alignFooter">
             <p>© 2023 Todos los derechos reservados.</p>
             <p>® Lanati's Barbershop y su logo son marca registrada.</p>
-        </section>
-        <div class="col-sm-12 col-md-1 col-lg-1,5 p-0 alignFooter">
+        </div>
+        <div class="col-sm-12 col-md-1 col-lg-1,5 col-xxl-1 p-0 d-flex justify-content-center align-items-center alignFooter">
             <a href="https://wa.me/1135161755">
-                <img class= "logoWpp" src="../assets/whatsapp.png" alt="logo">
+                <img class= "logoWpp" src="../assets/whatsapp-3.png" alt="logo de Wpp">
             </a>
         </div>
     </footer>

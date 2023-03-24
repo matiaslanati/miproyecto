@@ -1,7 +1,9 @@
 h1{
     color: black;
     font-size: xxx-large;
-    font-family: 'Playfair Display', serif;}
+    font-family: $font-Playfair;
+    font-weight: 600;
+}
 .barberia{
     background: url("../assets/barberia.jpeg") no-repeat center fixed;
     background-size: cover;
@@ -11,4 +13,9 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    h4{
+        font-family: 'Playfair Display', serif;
+    }
+    p{
+        font-family: "Playfair Display", serif;}
 }

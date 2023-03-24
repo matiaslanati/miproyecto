@@ -4,7 +4,7 @@
 .cursoTitulo{
 display: flex;
 justify-content: center;
-padding: 45px 0 25px 0;}
+padding: 20px 0 25px 0;}
 .descripcion{
     text-align: center;
 }
@@ -19,6 +19,9 @@ padding: 45px 0 25px 0;}
         .img1{
             width: 100%;
             height: 100%;
+            &:hover{
+                filter: saturate(200%);
+            }
         }
     }
     .imgCurso{
@@ -33,6 +36,9 @@ padding: 45px 0 25px 0;}
         .img3{
             width: 100%;
             height: 100%;
+            &:hover{
+                filter: saturate(200%);
+            }
         }
     }
 }

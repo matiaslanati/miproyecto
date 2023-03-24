@@ -9,15 +9,11 @@
                 }
             }
         }
-    }
-    .logoBarber{
-        width: 65px;
-        height: 65px;
-        &:hover{ 
-            width: 40px;
-            height: 40px;
+        .logoBarber{
+            width: 65px;
+            height: 65px;
         }
-}
+    }
 
 .main{
     .orden{
@@ -38,14 +34,22 @@
     }
 }
 
+.paddingMain{
+    .productos{
+        padding: 15px 0 20px 0px;
+    }
+}
+
     .ultima-foto{
         width: 100%;
-        height: 90%;
     }
     a{
         font-size: 76%;
     }
-    
+    .ubicacion {
+        font-size: 16px;
+    }
+
     .alignFooter{
         display: flex;
         flex-direction: column;

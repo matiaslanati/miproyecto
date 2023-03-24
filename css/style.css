@@ -6,11 +6,16 @@
           box-sizing: border-box;
 }
 
-header {
+header .navPrincipal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
   background-color: black;
-  padding: 5px;
+  padding: 10px;
 }
-header nav ul {
+header .navPrincipal ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,37 +33,34 @@ header nav ul {
       -ms-flex-align: center;
           align-items: center;
 }
-header nav ul a {
+header .navPrincipal ul a {
   color: white;
   text-decoration-line: none;
   font-family: "Abel", sans-serif;
 }
-header nav ul a:hover {
+header .navPrincipal ul a:hover {
   text-decoration: underline;
 }
-header h4 {
+header .navPrincipal h4 {
   font-family: ui-sans-serif;
 }
-header h5 {
+header .navPrincipal h5 {
   font-family: ui-sans-serif;
 }
-
-.navbar-toggler {
-  background-color: white;
-}
-
-.navbar {
+header .navbar {
   visibility: hidden;
 }
-
-.logoBarber {
+header .navbar .navbar-toggler {
+  background-color: white;
+}
+header .logoBarber {
   width: 80px;
   height: 80px;
   border-radius: 50%;
 }
-.logoBarber:hover {
-  width: 90px;
-  height: 90px;
+header .logoBarber:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 footer {
@@ -66,6 +68,9 @@ footer {
   background-color: black;
 }
 footer h4 {
+  font-family: "Playfair Display", serif;
+}
+footer p {
   font-family: "Playfair Display", serif;
 }
 
@@ -77,13 +82,15 @@ footer h4 {
   height: 75px;
 }
 .row .logoWpp:hover {
-  padding: 5%;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 h1 {
   color: black;
   font-size: xxx-large;
   font-family: "Playfair Display", serif;
+  font-weight: 600;
 }
 
 .barberia {
@@ -102,6 +109,12 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
 }
+.barberia h4 {
+  font-family: "Playfair Display", serif;
+}
+.barberia p {
+  font-family: "Playfair Display", serif;
+}
 
 .main {
   height: 100vh;
@@ -112,7 +125,7 @@ h1 {
   margin-right: 6px;
 }
 .main p {
-  font-family: "Playfair Display", serif;
+  font-family: "Lora", serif;
 }
 .main .orden {
   display: -webkit-box;
@@ -122,7 +135,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 65px 0 24px 0px;
+  padding: 115px 0 24px 0px;
 }
 .main .orden .izquierda {
   width: 50%;
@@ -159,20 +172,22 @@ h1 {
   margin: 5% 0 10% 0;
 }
 
-.productos {
-  padding: 65px 0 30px 0px;
+.paddingMain {
+  padding-top: 100px;
 }
-
-.descProductos {
+.paddingMain .productos {
+  text-align: center;
+  padding: 25px 0 20px 0px;
+}
+.paddingMain .descProductos {
+  text-align: center;
   padding: 0px 0px 65px 0px;
 }
-
-h3 {
+.paddingMain h3 {
   font-family: "Abel", sans-serif;
   margin-bottom: 3%;
 }
-
-.grids {
+.paddingMain .grids {
   display: -ms-grid;
   display: grid;
   width: 100%;
@@ -181,35 +196,44 @@ h3 {
   -ms-grid-rows: (1fr)[1];
   grid-template-rows: repeat(1, 1fr);
 }
-
-.grids > *:nth-child(1) {
+.paddingMain .grids > *:nth-child(1) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
 }
-
-.grids > *:nth-child(2) {
+.paddingMain .grids > *:nth-child(2) {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
 }
-
-.grids > *:nth-child(3) {
+.paddingMain .grids > *:nth-child(3) {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
 }
-.grids .item1, .grids .item3, .grids .item2 {
+.paddingMain .grids .item1, .paddingMain .grids .item3, .paddingMain .grids .item2 {
   text-align: center;
 }
-.grids .item1 .pomadas, .grids .item3 .pomadas, .grids .item2 .pomadas {
+.paddingMain .grids .item1 .pomadas, .paddingMain .grids .item3 .pomadas, .paddingMain .grids .item2 .pomadas {
   width: 85%;
   height: 55%;
 }
-.grids .item2 .lentes {
+.paddingMain .grids .item1 .pomadas:hover, .paddingMain .grids .item3 .pomadas:hover, .paddingMain .grids .item2 .pomadas:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.paddingMain .grids .item2 .lentes {
   width: 90%;
   height: 70%;
 }
-.grids .item3 .vapers {
+.paddingMain .grids .item2 .lentes:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.paddingMain .grids .item3 .vapers {
   width: 90%;
   height: 55%;
+}
+.paddingMain .grids .item3 .vapers:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .main {
@@ -223,7 +247,7 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 45px 0 25px 0;
+  padding: 20px 0 25px 0;
 }
 
 .descripcion {
@@ -251,6 +275,10 @@ h3 {
   width: 100%;
   height: 100%;
 }
+.flexCurso .opcion-1 .img1:hover {
+  -webkit-filter: saturate(200%);
+          filter: saturate(200%);
+}
 .flexCurso .imgCurso {
   width: 39%;
 }
@@ -265,68 +293,70 @@ h3 {
   width: 100%;
   height: 100%;
 }
+.flexCurso .opcion-2 .img3:hover {
+  -webkit-filter: saturate(200%);
+          filter: saturate(200%);
+}
 
 .main {
   height: 100vh;
+  color: black;
 }
-.main .parteArriba {
-  padding: 48px 0 8px 0;
-}
-.main .parteArriba .primerP {
-  padding: 2rem 0 0 0;
+.main .parteArriba .section-1 {
+  background-color: rgb(205, 141, 30);
+  border-radius: 15%;
 }
 .main .parteArriba .ultima-foto {
   width: 100%;
-  height: 90%;
+  border-radius: 3%;
 }
-.main .parteArriba .d-flex {
-  font-size: large;
-  padding: 5% 0 0 0;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+.main .parteArriba .ultima-foto:hover {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
 }
-.main .parteArriba .d-flex a {
+.main .parteArriba .section-3 {
+  background-color: rgb(158, 158, 158);
+  border-radius: 15%;
+}
+.main .parteArriba .section-3 a {
   color: black;
   text-decoration-line: none;
 }
-.main .parteArriba .d-flex a:hover {
+.main .parteArriba .section-3 a:hover {
   text-decoration: underline;
 }
-.main .parteArriba .d-flex a .logoIgTiktok {
-  width: 20%;
-  height: 95%;
+.main .parteArriba .section-3 a .logoIgTiktok, .main .parteArriba .section-3 a .logoGmail {
+  width: 60px;
 }
-.main .parteArriba .d-flex a .logoIgTiktok:hover {
-  width: 24%;
+.main .parteArriba .section-3 a .logoIgTiktok:hover, .main .parteArriba .section-3 a .logoGmail:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
-.main .parteArriba .d-flex a .logoGmail {
-  width: 20%;
-  height: 80%;
+.main .parteArriba .section-3 a .logoGmail:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
-.main .parteArriba .d-flex a .logoGmail:hover {
-  width: 24%;
-}
-.main aside .parteIzq {
+.main .parteInfer .parteIzq {
   width: 70%;
 }
-.main aside .parteIzq .d-flex {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+.main .parteInfer .parteIzq a {
+  color: black;
+  text-decoration-line: none;
 }
-.main aside .parteIzq .logoUbi {
+.main .parteInfer .parteIzq a:hover {
+  text-decoration: underline;
+}
+.main .parteInfer .parteIzq .logoUbi {
+  width: 9.5%;
+}
+.main .parteInfer .parteIzq .logoUbi:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.main .parteInfer .parteIzq .logoHora {
   width: 10%;
 }
-.main aside .parteIzq .logoHora {
-  width: 10%;
-}
-.main aside .parteDer {
-  padding-bottom: 20px;
+.main .parteInfer .parteDer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -334,18 +364,15 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
-.main aside .parteDer ç p {
-  margin-bottom: 10px;
+.main .parteInfer .parteDer p {
+  color: black;
 }
-.main aside .parteDer a {
+.main .parteInfer .parteDer a {
   color: black;
   text-decoration-line: none;
 }
-.main aside .parteDer a:hover {
+.main .parteInfer .parteDer a:hover {
   text-decoration: underline;
 }
 
@@ -359,13 +386,9 @@ h3 {
   header nav ul a {
     font-size: 85%;
   }
-  .logoBarber {
+  header .logoBarber {
     width: 65px;
     height: 65px;
-  }
-  .logoBarber:hover {
-    width: 40px;
-    height: 40px;
   }
   .main .orden {
     margin: 0px;
@@ -383,12 +406,17 @@ h3 {
   .main .orden .derecha .servicio {
     text-align: center;
   }
+  .paddingMain .productos {
+    padding: 15px 0 20px 0px;
+  }
   .ultima-foto {
     width: 100%;
-    height: 90%;
   }
   a {
     font-size: 76%;
+  }
+  .ubicacion {
+    font-size: 16px;
   }
   .alignFooter {
     display: -webkit-box;
@@ -414,10 +442,6 @@ h3 {
     width: 50px;
     height: 50px;
   }
-  header nav ul .logoBarber:hover {
-    width: 40px;
-    height: 40px;
-  }
   h1 {
     font-size: xx-large;
   }
@@ -426,8 +450,7 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0px;
-    padding: 0px;
+    padding: 50px 0 0 0;
   }
   .main .orden .izquierda {
     -webkit-box-orient: horizontal;
@@ -436,7 +459,6 @@ h3 {
             flex-direction: row;
     margin: 0px;
     width: 100%;
-    height: 50vh;
   }
   .main .orden .izquierda .tamañoResponsive {
     width: 50%;
@@ -454,9 +476,8 @@ h3 {
     padding-top: 12%;
   }
   .main .orden .izquierda .imgTurno {
-    width: 85%;
-    height: 85%;
-    margin: 50px 0px 0px 20px;
+    height: 80%;
+    margin: 50px 0px 0px 0px;
   }
   .main .orden .derecha {
     width: 100%;
@@ -504,28 +525,25 @@ h3 {
         -ms-flex-order: 3;
             order: 3;
   }
-  .main .parteArriba {
+  .main .paddingMain {
+    padding-top: 70px;
+  }
+  .main .paddingMain .parteArriba {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 20px 0 0 0;
   }
-  .main .parteArriba .section-1 {
+  .main .paddingMain .parteArriba .section-1 {
     padding: 0 50px 0 50px;
+    border-radius: 0%;
   }
-  .main .parteArriba .section-2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .main .paddingMain .parteArriba .ultima-foto {
+    width: 80%;
+    border-radius: 0%;
   }
-  .main .parteArriba .section-2 .ultima-foto {
-    width: 75%;
-  }
-  .main .parteArriba .section-3 {
+  .main .paddingMain .parteArriba .section-3 {
     padding: 20px 0 20px 0px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -537,18 +555,16 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    border-radius: 0%;
   }
-  .main .parteArriba .section-3 .redes {
+  .main .paddingMain .parteArriba .section-3 .redes {
     padding: 15px 0 0px 0px;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
   }
-  .main .parteArriba .section-3 .redes .d-flex {
-    padding: 0% 0 0 0;
-  }
-  .main .parteArriba .section-3 .redes .d-flex a {
+  .main .paddingMain .parteArriba .section-3 .redes a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -561,22 +577,17 @@ h3 {
             align-items: center;
     text-align: center;
   }
-  .main .parteArriba .section-3 .redes .d-flex a .logoIgTiktok:hover {
-    width: 25%;
-  }
-  .main .parteArriba .section-3 .redes .d-flex a .logoGmail:hover {
-    width: 25%;
-  }
-  .main aside .parteIzq {
+  .main .paddingMain .parteInfer .parteIzq {
     padding-bottom: 5px;
   }
-  .main aside .parteIzq .logoUbi {
+  .main .paddingMain .parteInfer .parteIzq .logoUbi {
     width: 10%;
+    padding: 5px;
   }
-  .main aside .parteIzq p {
+  .main .paddingMain .parteInfer .parteIzq p {
     margin-bottom: 10px;
   }
-  .main aside .parteDer {
+  .main .paddingMain .parteInfer .parteDer {
     padding-bottom: 0px;
   }
   .alignFooter {
@@ -597,10 +608,10 @@ h3 {
   header nav {
     padding-bottom: 6%;
   }
-  header nav .primerNav {
+  header .navPrincipal {
     visibility: hidden;
   }
-  header nav .primerNav a {
+  header .navPrincipal a {
     font-size: 70%;
   }
   header .navbar {
@@ -611,6 +622,9 @@ h3 {
   }
   h1 {
     font-weight: 600;
+  }
+  .main .orden {
+    padding-top: 85px;
   }
   .main .orden .izquierda {
     -webkit-box-orient: vertical;
@@ -641,65 +655,61 @@ h3 {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
-    margin: 10% 0 0 0;
+    margin: 0;
   }
   .main .orden .derecha .servicio {
     margin: 3% 0 3% 0;
   }
-  .productos {
-    text-align: center;
-    padding: 15px 0 20px 0px;
+  .paddingMain .descProductos {
+    padding: 0px 10px 15px 10px;
   }
-  .descProductos {
-    padding: 0px 10px 0px 10px;
-  }
-  h3 {
+  .paddingMain h3 {
     margin-bottom: 3%;
   }
-  .grids {
+  .paddingMain .grids {
     -ms-grid-columns: (1fr)[1];
     grid-template-columns: repeat(1, 1fr);
     -ms-grid-rows: ()[3];
     grid-template-rows: repeat(3);
   }
-  .grids > *:nth-child(1) {
+  .paddingMain .grids > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
   }
-  .grids > *:nth-child(2) {
+  .paddingMain .grids > *:nth-child(2) {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
-  .grids > *:nth-child(3) {
+  .paddingMain .grids > *:nth-child(3) {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
-  .grids .item1, .grids .item2, .grids .item3 {
+  .paddingMain .grids .item1, .paddingMain .grids .item2, .paddingMain .grids .item3 {
     height: 228px;
   }
-  .grids .item1 .pomadas, .grids .item2 .pomadas, .grids .item3 .pomadas {
+  .paddingMain .grids .item1 .pomadas, .paddingMain .grids .item2 .pomadas, .paddingMain .grids .item3 .pomadas {
     width: 65%;
     height: 180px;
   }
-  .grids .item2 {
+  .paddingMain .grids .item2 {
     height: 225px;
   }
-  .grids .item2 .lentes {
+  .paddingMain .grids .item2 .lentes {
     width: 55%;
     height: 77%;
   }
-  .grids .item3 {
+  .paddingMain .grids .item3 {
     height: 225px;
   }
-  .grids .item3 .vapers {
+  .paddingMain .grids .item3 .vapers {
     width: 70%;
     height: 75%;
   }
+  .main .paddingMain {
+    padding-top: 90px;
+  }
   .main .parteArriba {
     padding: 20px 0 0px 0;
-  }
-  .main .parteArriba .primerP {
-    padding: 1rem 0 0 0;
   }
   .main .parteArriba .section-3 {
     padding: 20px 0 20px 0px;
@@ -714,13 +724,16 @@ h3 {
             flex-direction: column;
     padding-top: 0;
   }
-  .main .parteArriba .section-3 .redes .logoIgTiktok {
-    width: 18%;
+  .main .parteArriba .section-3 .redes a {
+    font-size: 65%;
   }
-  .main .parteArriba .section-3 .redes .logoGmail {
-    width: 18%;
+  .main .parteArriba .section-3 .redes a .logoIgTiktok, .main .parteArriba .section-3 .redes a .logoGmail {
+    width: 50px;
   }
-  .main aside {
+  .main .parteArriba .section-3 .redes a .logoGmail {
+    width: 50px;
+  }
+  .main .parteInfer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -729,13 +742,13 @@ h3 {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
   }
-  .main aside .parteIzq {
+  .main .parteInfer .parteIzq {
     width: 100%;
   }
-  .main aside .parteIzq .d-flex {
+  .main .parteInfer .parteIzq .d-flex {
     padding: 0px 10px 0 10px;
   }
-  .main aside .parteDer {
+  .main .parteInfer .parteDer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -744,10 +757,10 @@ h3 {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .main aside .parteDer p {
+  .main .parteInfer .parteDer p {
     margin-bottom: 8px;
   }
-  .main aside .parteDer a {
+  .main .parteInfer .parteDer a {
     padding-left: 4px;
     font-size: medium;
   }
